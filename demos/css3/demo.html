@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset=utf-8>
+    <title>52framework - The framework from the future, HTML5, CSS3, and more!</title>
+    <script src="http://c.fzilla.com/1286136086-jquery.js"></script>
+    <script src="../../js/modernizr-1.7.min.js"></script><!-- this is the javascript allowing html5 to run in older browsers -->
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css" media="screen" title="html5doctor.com Reset Stylesheet" />
+    
+    <!-- in the CSS3 stylesheet you will find examples of some great new features CSS has to offer -->
+    <link rel="stylesheet" type="text/css" href="../../css/css3.css" media="screen" />
+    
+    <!-- general stylesheet contains some default styles, you do not need this, but it helps you keep a uniform style -->
+    <link rel="stylesheet" type="text/css" href="../../css/general.css" media="screen" />
+    
+    <!-- grid's will help you keep your website appealing to your users, view 52framework.com website for documentation -->
+    <link rel="stylesheet" type="text/css" href="../../css/grid.css" media="screen" />
+    
+    <!-- this script is needed for using advanced css selectors in your css -->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    	<script src="../../js/selectivizr.js"></script>
+    <![endif]-->  
+    
+    <!-- the following style is for demonstartion purposes only and is not needed for anything but inspiration -->
+    <style>
+		header {padding-top:25px; border-bottom:1px solid #ccc; padding-bottom:20px;}
+		header .logo {font-size:3.52em;}
+		header nav ul li {float:left; margin-top:12px;}
+		header nav ul li a {display:block; padding:5px 15px; border-right:1px solid #eee; font-size:1.52em; font-family:Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+		header nav ul li a:hover {background-color:#eee; border-right:1px solid #ccc; text-shadow:-1px -1px 0px #fff;}
+		header nav ul li.last a {border-right:none;}
+		
+		#css3 div > div {margin:0px 0px 50px 0px; padding:6px; border:1px solid #eee;}
+		#grid div {text-align:center;  }
+		#grid div > .col {border-bottom:1px solid #ccc; padding:10px 0px; outline:1px solid #eee;}
+		
+		h2 {border-bottom:1px dashed #ccc; margin-top:15px;}
+		
+		.documentation {display:block; background-color:#eee; padding:6px 13px; font-family:Georgia, "Times New Roman", Times, serif; color:#666; text-align:right; text-shadow:-1px -1px 0px #fff;}
+		
+		footer {text-align:center; color:#666; font-size:0.9em; padding:4px 0px;}
+	</style>
+    </head>
+
+<body>
+<div class="row">
+	<header>
+    	
+        <div class="logo col_7 col">52framework</div><!-- logo col_7 -->
+        
+      <nav class="col_9 col">
+        	<ul>
+            	<li><a href="#nav">navigation 1</a></li>
+                <li><a href="#nav">navigation 2</a></li>
+            	<li class="last"><a href="http://www.enavu.com">enavu network</a></li>
+            </ul>
+        </nav><!-- nav col_9 -->
+      <div class="clear"></div><!-- clear -->
+    </header>
+</div><!-- row -->
+
+<!-- this section shows off the CSS3 properties you can use today, with very little to no problems with older browsers -->
+<section class="row" id="css3">
+	<h2 class="fontface">CSS3 Examples</h2>
+    <div class="col_4 col">
+    	<h4 class="shadow">This text has a shadow</h4>
+        
+        <h4 class="shadow_multiple">Multiple Shadows here</h4>
+        
+        <div class="box_shadow">This box has a shadow</div><!-- box shadow -->
+        
+        <div class="box_shadow_multiple" style="width:90px; height:80px; margin:10px auto; border:1px solid #fff;">This box has a lot of shadows inside and out</div><!-- multiple shadows -->
+    </div><!-- col_4 -->
+  <div class="col col_4">
+    	<div class="rounded">This box is rounded</div><!-- rounded -->
+        
+        <div class="rounded_top_right">This box is only rounded on the top right</div><!-- rounded_top_right -->
+    </div><!-- col_4 -->
+  <div class="col col_4">
+    	<div class="rotate">This box is rotated</div><!-- rotate -->
+        
+        <div class="fontface">This font uses a custom @font-face font.</div><!-- fontface -->
+    </div><!-- col_4 -->
+  <div class="col col_4">
+    	<div class="gradient">This box has a gradient</div><!-- gradient -->
+        <div class="gradient_radial" style="height:80px;">This boxes gradient is radial</div><!-- radial -->
+    </div><!-- col_4 -->
+  <div class="col_16 col">
+    	<a href="http://www.css3.info/preview/" class="documentation">Some Nice CSS3 Documentation</a>
+    </div><!-- col_16 -->
+</section><!-- row-->
+
+<!-- css3 selectors -->
+<section class="row" id="selectors">
+	<h2>CSS3 Selectors (with ie support)</h2>
+    <div class="col_16 col">
+    <code>
+    	&lt;style&gt;<br />
+			input[value=test] {background-color:#000; color:#fff;}<br />
+			ul.odd li:nth-child(odd) { background-color:#eee; }<br />
+		&lt;/style&gt;<br />
+        &lt;input value=&quot;test&quot; /&gt;<br /> notice i have selected this input tag by using the <br />&lt;code class=&quot;inline&quot;&gt;input[value=test]&lt;/code&gt; you can exchange the &quot;attribute type&quot;=&quot;value for the attribute&quot; anyway you want.<br />
+        &lt;ul class=&quot;odd&quot;&gt;<br />&lt;li&gt;Odd&lt;/li&gt;<br />&lt;li&gt;Even&lt;/li&gt;<br />&lt;li&gt;Odd&lt;/li&gt;<br />&lt;li&gt;Even&lt;/li&gt;<br />&lt;/ul&gt;
+    </code><br />
+    	<style>
+			input[value=test] {background-color:#000; color:#fff;}
+			ul.odd li:nth-child(odd) { background-color:#eee; }
+		</style>
+        <input value="test" /> notice i have selected this input tag by using the <code class="inline">input[value=test]</code> you can exchange the "attribute type"="value for the attribute" anyway you want.
+        <ul class="odd"><li>Odd</li><li>Even</li><li>Odd</li><li>Even</li></ul>
+    </div><!-- col_16-->
+  <div class="col_16 col">
+    	<a href="http://selectivizr.com/" class="documentation">More Information on Using CSS Selectors</a>
+    </div><!-- col_16 -->
+</section>
+
+<section class="row" style="margin-top:20px; margin-bottom:20px;">
+	<div class="col_16 col">
+    	For more information on CSS3 support and browsers go <a href="http://www.deepbluesky.com/blog/-/browser-support-for-css3-and-html5_72/">here</a>.
+    </div><!-- col_16 -->
+</section>
+<footer class="row">
+
+	<div class="col_16 col">all rights reserved &copy; <a href="http://www.enavu.com">enavu network</a> | 52framework the framework from the future</div>
+
+</footer>
+</body>
+</html>

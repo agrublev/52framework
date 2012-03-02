@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>Grid Demo</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css"  />
+<link rel="stylesheet" href="css/grid.css" type="text/css" />
+<style>
+	body {background:#525252 url("http://www.52framework.com/images/grid.jpg") repeat-y center;}
+	p {
+			font:6em "Trebuchet MS", Arial, Helvetica, sans-serif;
+			color: #000;
+			text-align: center;
+			border: 1px solid #000;
+			margin: 0 0 20px 0;
+		}
+	.clear{clear:both; height:10px;}
+	div, div {margin-bottom:2px}
+</style>
+<script src="js/modernizr-1.1.min.js"></script><!-- this is the javascript allowing html5 to run in older browsers -->
+</head>
+
+<body>
+<div class="row">
+	<div class="col col_16"><p>16</p></div>
+</div>
+
+<div class="row">
+	<div class="col col_8"><p>8</p>
+		<div class="row">
+			<div class="col col_4"><p>4</p></div>
+			<div class="col col_4"><p>4</p></div>
+		</div>
+	</div>
+	<div class="col col_8"><p style="line-height: 202px;">8</p></div>
+</div>
+<div class="clear"></div>
+<div class="row">
+	<div class="col col_16"><p>16</p></div>
+</div>
+
+<div class="row">
+	<div class="col col_10"><p style="line-height: 202px;">10</p></div>
+	<div class="col col_6"><p>6</p>
+		<div class="row">
+			<div class="col col_3"><p>3</p></div>
+			<div class="col col_3"><p>3</p></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+    <div class="inner_wrapper">
+        
+        <div class="col_4 col">
+            <p>Col 4</p>
+        </div><!-- end col_4 -->
+        <div class="col_12 col">
+            <p>Col 12</p>
+        </div><!-- end col 12 -->
+        
+        <div class="col_5 col">
+            <p>Col 5</p>
+        </div><!-- end col_5 -->
+        <div class="col_11 col">
+            <p>Col 11</p>
+        </div><!-- end col 11 -->
+        
+        <div class="col_6 col">
+            <p>Col 6</p>
+        </div><!-- end col_6 -->
+        <div class="col_10 col">
+            <p>Col 10</p>
+        </div><!-- end col 10 -->
+        
+        <div class="col_7 col">
+            <p>Col 7</p>
+        </div><!-- end col_7 -->
+        <div class="col_9 col">
+            <p>Col 9</p>
+        </div><!-- end col 9 -->
+        <div class="clear"></div>
+        <div class="col_4 col">
+            <p>Col 4</p>
+        </div><!-- end col_4 -->
+        <div class="col_4 col">
+            <p>Col 4</p>
+        </div><!-- end col_4 -->
+        <div class="col_4 col">
+            <p>Col 4</p>
+        </div><!-- end col_4 -->
+        <div class="col_4 col">
+            <p>Col 4</p>
+        </div><!-- end col_4 -->
+    </div><!-- end inner_wrapper -->
+</div><!-- end wrap_16 -->
+</body>
+</html>

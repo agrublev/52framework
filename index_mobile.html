@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset=utf-8>
+    <title>52framework - The framework from the future, HTML5, CSS3, and more!</title>
+    
+    <!-- this is for mobile devices -->
+    <meta name="viewport" content="width=320; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta name="apple-touch-fullscreen" content="yes" /> 
+    
+    <script src="js/modernizr-1.5.min.js"></script><!-- this is the javascript allowing html5 to run in older browsers -->
+    <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    
+    <!-- latest jquery library -->
+    <script src="js/jquery.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" title="html5doctor.com Reset Stylesheet" />
+    
+    <!-- in the CSS3 stylesheet you will find examples of some great new features CSS has to offer -->
+    <link rel="stylesheet" type="text/css" href="css/css3.css" media="screen" />
+    
+    <!-- general stylesheet contains some default styles, you do not need this, but it helps you keep a uniform style -->
+    <link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css" media="screen" />
+    
+    <!-- embeds necessary for html5 video player, take this section out if you are not using the video player -->
+    
+    <script src="video/video.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+ 	$(function(){
+    	VideoJS.setup();
+    })
+    </script>
+    <link rel="stylesheet" href="video/video-js.css" type="text/css" media="screen" charset="utf-8">
+	<!-- end video embed scripts and styles -->
+    
+    <!-- this script is needed to accomplish html5 validation, uses jquery tools validator script -->
+    <script src="js/validator.js"></script>
+    <script>
+		$(function(){
+			$("form").validator()
+		})
+	</script>
+        
+    <!-- the following style is for demonstartion purposes only and is not needed for anything but inspiration -->
+    <style>
+		header {padding-top:25px; border-bottom:1px solid #ccc; padding-bottom:20px;}
+		header .logo {font-size:3.52em; width:100%; text-align:center}
+		header nav ul li {float:left; margin-top:5px;}
+		header nav ul li a {display:block; padding:3px 10px; border-right:1px solid #eee; font-size:1.52em; font-family:Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+		header nav ul li a:hover {background-color:#eee; border-right:1px solid #ccc; text-shadow:-1px -1px 0px #fff;}
+		header nav ul li.last a {border-right:none;}
+		
+		#css3 div > div {margin:0px 0px 50px 0px; padding:6px; border:1px solid #eee;}
+		#grid div {text-align:center;  }
+		#grid div > .col {border-bottom:1px solid #ccc; padding:10px 0px; outline:1px solid #eee;}
+		
+		h2 {border-bottom:1px dashed #ccc; margin-top:15px;}
+		
+		.documentation {display:block; background-color:#eee; padding:6px 13px; font-family:Georgia, "Times New Roman", Times, serif; color:#666; text-align:right; text-shadow:-1px -1px 0px #fff;}
+		
+		footer {text-align:center; color:#666; font-size:0.9em; padding:4px 0px;}
+	</style>
+    
+    
+    <!-- this stylesheet required for mobile browsers, inside it allows you to control portrait and landscape modes -->
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen" />
+    
+    
+    </head>
+
+<body>
+<div class="row">
+	<header>
+    	
+        <div class="logo col_7 col">52framework</div><!-- logo col_7 -->
+        
+        <nav class="col_9 col">
+        	<ul>
+            	<li><a href="#video">video</a></li>
+                <li><a href="#">forms</a></li>
+                <li><a href="#">css3</a></li>
+                <li><a href="#">canvas</a></li>
+            	<li class="last"><a href="http://www.enavu.com">enavu network</a></li>
+            </ul>
+        </nav><!-- nav col_9 -->
+        <div class="clear"></div><!-- clear -->
+    </header>
+</div><!-- row -->
+
+
+<!-- html5 form validation using jquery tools validator -->
+<section class="row" id="forms">
+	<h2 class="fontface">Forms Demo</h2>
+	<form class="col col_7">
+    	<fieldset>	
+        	<legend>HTML5 Validation Form</legend>
+            <div>
+            	<label>email</label>
+                <input type="email" required="required" class="box_shadow"  />
+            </div>
+            <div>
+            	<label>phone</label>
+                <input type="number" required="required" class="box_shadow" min="10" />
+            </div>
+            <div>
+            	<label>name</label>
+                <input type="text" class="box_shadow" />
+            </div>
+            <div>
+            	<label>url</label>
+                <input type="url" class="box_shadow" />
+            </div>
+            <input type="submit" value="submit form &rarr;" />
+        </fieldset>
+    </form>
+    <div class="clear" style="height:15px;"></div><!-- clear -->
+	<div class="col_16 col">
+    	<a href="http://flowplayer.org/tools/validator/index.html" class="documentation">HTML5 Form Validation Documentation</a>
+    </div><!-- col -->
+</section><!-- row -->
+
+<!-- this section shows off the CSS3 properties you can use today, with very little to no problems with older browsers -->
+<section class="row" id="css3">
+	<h2 class="fontface">CSS3 Examples</h2>
+    <div class="col_4 col">
+    	<h4 class="shadow">This text has a shadow</h4>
+        
+        <div class="box_shadow">This box has a shadow</div><!-- box shadow -->
+    </div><!-- col_4 -->
+	<div class="col col_4">
+    	<div class="rounded">This box is rounded</div><!-- rounded -->
+        
+        <div class="rounded_top_right">This box is only rounded on the top right</div><!-- rounded_top_right -->
+    </div><!-- col_4 -->
+    <div class="col col_4">
+    	<div class="rotate">This box is rotated</div><!-- rotate -->
+        
+        <div class="fontface">This font uses a custom @font-face font.</div><!-- fontface -->
+    </div><!-- col_4 -->
+    <div class="col col_4">
+    	<div class="gradient">This box has a gradient</div><!-- gradient -->
+    </div><!-- col_4 -->
+	<div class="col_16 col">
+    	<a href="http://www.css3.info/preview/" class="documentation">Some Nice CSS3 Documentation</a>
+    </div><!-- col_16 -->
+</section><!-- row-->
+
+<!-- this section shows you most of the styled elements from the general stylesheet -->
+<section class="row" id="styled">
+	<h2>Styled Elements</h2>
+    <div class="col col_9">
+    	<article>
+            <h1>This is a title h1</h1>
+            <blockquote class="right">This is what a blockquote will look like, floated right.<br />Testing a second line inside the blockquote.</blockquote>
+            <p>Lorem ipsum <a href="#">link one</a> dolor sit amet, consectetur adipiscing elit. Nullam  a purus ac est dapibus feugiat eu eget nulla. Sed molestie feugiat viverra. Pellentesque consectetur, leo in faucibus congue, elit purus bibendum tellus, non tincidunt tortor mauris in sem. Suspendisse sodales metus eget sem suscipit eleifend. Proin porttitor, ante vel egestas pretium, nulla eros mollis eros, dapibus molestie lacus mi at sapien. Fusce risus risus, vulputate vel bibendum nec, accumsan non lacus.Fusce viverra mollis sapien non mattis. Suspendisse id est sapien. Aliquam quis tellus sed lorem fermentum rutrum in eget urna. Mauris ac dolor sit amet tellus tristique eleifend. Morbi venenatis ultricies eleifend. Nunc arcu lorem, feugiat pulvinar laoreet convallis, consequat sed elit. Suspendisse potenti.Vivamus a turpis augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi blandit erat eget purus gravida nec aliquam lectus sollicitudin. Aenean semper tortor nunc, dignissim malesuada arcu. Nunc nec massa a erat consectetur porta vitae eu mauris. Donec a orci dolor. Sed ac erat sed ipsum imperdiet accumsan. </p>
+        </article>  
+       
+       <article> 
+            <h2>This is an h2</h2>
+        <p>Nulla facilisi. Etiam eget laoreet turpis. Duis magna odio, volutpat eu varius vitae, interdum eu felis. Pellentesque luctus tincidunt urna vel dictum. Etiam facilisis purus ut lorem aliquet eleifend. Sed porttitor semper turpis mattis iaculis. Vivamus a turpis augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi blandit erat eget purus gravida nec aliquam lectus sollicitudin.
+           <code>
+                
+                css {<br />
+                -moz-border-radius: 5px; <br />
+                -webkit-border-radius: 5px;<br />
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);<br />
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);<br />
+                }<br />
+               
+           </code>
+        <p>
+             Aenean semper tortor nunc, dignissim malesuada arcu. Nunc nec massa a erat consectetur porta vitae eu mauris. Donec a orci dolor. Sed ac erat sed ipsum imperdiet accumsan. Nullam commodo neque adipiscing lacus sagittis sit amet dictum urna vestibulum. Nulla sapien turpis, laoreet in lacinia sed, malesuada sit amet odio. Maecenas cursus mauris vel nunc adipiscing id bibendum ipsum faucibus.</p>
+        <article>    
+            <h3>This is an h3</h3>
+            <p>Duis ac arcu ante, at lacinia dui. Ut eget justo in nulla rutrum mollis. Mauris euismod justo et quam bibendum laoreet volutpat lorem mollis. In hac habitasse platea dictumst.
+            <pre>This is a pre tag</pre>
+             Mauris ut eleifend neque. Duis nulla metus, tempus nec varius quis, tincidunt consectetur nisi. Donec rhoncus quam vel quam bibendum rutrum. Mauris et commodo felis. Nam varius eleifend nulla quis sagittis. Quisque id tortor at dolor dictum interdum.</p>
+        </article>
+    </div><!-- col_9 -->
+    <div class="col col_7">
+    	<article>
+            <h2>List Elements</h2>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+            </ul>	
+            <div class="clear" style="height:20px;"></div>			
+            <h2>Other Elements Styling</h2>	
+            
+            <p>
+                    This is <abbr title="title">abbreviation</abbr><br />
+                    This is <strong>strong</strong><br />
+                    This is <em>emphasis</em><br />
+                    This is <b>bold text</b><br />
+                    This is <i>italic text</i><br />
+                    This is <cite>cite</cite><br />
+                    This is <small>small text</small><br />
+                    This is <big>big text</big><br />
+                    This is <del>deleted text</del><br />
+                    This is <ins>inserted text</ins><br />
+                    This is <dfn>defining instance</dfn><br />
+                    This is <kbd>user input</kbd><br />
+                    This is <samp>sample output</samp><br />
+                    This is <q>inline quotation</q> <br />
+                    These are <sub>subscript</sub> and <sup>superscript</sup><br />
+                    This is <var>a variable</var>
+            </p>
+        </article>
+    </div><!-- col_7 -->
+    
+    <div class="col_16 col">
+    	<a href="http://www.52framework.com/documentation/" class="documentation">General Documentation</a>
+    </div><!-- col_16 -->
+</section><!-- row -->
+<footer class="row">
+
+	<div class="col_16 col">all rights reserved &copy; <a href="http://www.enavu.com">enavu network</a> | 52framework the framework from the future</div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>52Framework -- brought to you by the enavu network - Angel Grablev</title>
+<meta name="keywords" content="keywords, here" />
+<meta name="description" content="your description here" />
+
+<script src="js/modernizr-1.1.min.js"></script><!-- this is the javascript allowing html5 to run in older browsers -->
+
+
+<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" title="html5doctor.com Reset Stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/css3.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen" />
+<!-- @font-face provided by google, works on 97% of browsers -->
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+
+<style>
+/* Feel free to remove these styles, they are for demo page */
+.logo, h1, h2, h3, h4, h5 { font-family: 'Yanone Kaffeesatz', arial, serif; }
+
+
+header {height:112px; position:relative; margin-bottom:5px;}
+	header .logo {font-size:2.5em; height:52px; padding-top:28px; font-weight:700; text-shadow:1px 1px 2px #000; color:#fff; filter: Shadow(Color=#666666, Direction=135, Strength=3);}
+	header .statement {width:20%; text-align:right; padding-top:30px;}
+header nav { background-color:#525252; color:#fff; height:30px;}
+	nav ul {list-style:none;}
+	nav ul li {float:left; margin-left:5px;}
+	nav ul li a {display:block; color:#fff; text-decoration:none; padding:2px 8px; margin-top:8px;  
+					-moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;}
+	nav ul li a:hover, nav ul li.active a {background-color:#fff; color:#000;}
+aside {min-height:525px;}	
+
+footer { font-size:.8em; } 
+</style>
+</head>
+<body  onload="draw();">
+<div class="row">
+    <header>
+        <div class="logo left">52framework</div>
+        
+        <div class="statement right">The framework from the future!</div>
+        
+        <div class="clear"></div>
+        
+        <nav>
+        	<ul>
+            	<li><a href="/">Home</a></li>
+                <li class="active"><a href="css3.html">CSS3</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="http://52framework.com/documentation">Documentation</a></li>
+                <li><a href="http://52framework.com/about">About</a></li>
+                <li><a href="http://enavu.com">enavu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="clear"></div>
+    <aside class="col_4 col box_shadow shadow">
+    	<p style="padding:5px;">orem ipsum link one  dolor sit amet, consectetur adipiscing elit. Nullam a purus ac est dapibus feugiat eu eget nulla. Sed molestie feugiat viverra. Pellentesque consectetur, leo in faucibus congue, elit purus bibendum tellus, non tincidunt tortor mauris in sem. Suspendisse sodales metus eget sem suscipit eleifend. Proin porttitor, ante vel egestas pretium, nulla eros mollis eros, dapibus molestie lacus mi at sapien. Fusce risus risus, vulputate vel bibendum nec, accumsan non lacus.Fusce viverra mollis sapien non mattis. Suspendisse id est sapien. Aliquam quis tellus sed lorem fermentum rutrum in eget urna. Mauris ac dolor sit amet tellus tristique eleifend. Morbi venenatis ultricies eleifen</p>
+    </aside>
+    
+    <div class="content col_12 col">
+        <article>
+            <h1>CSS3 Page</h1>
+            <blockquote class="right">CSS3 is still not widely supported, so remember to check in all browsers!</blockquote>
+            <p>This page shows off some of the cool CSS3 features this framework helps you use.</p>
+        </article>  
+        <article>
+            <div class="shadows">
+            	<h4>Shadows</h3>
+                <p>
+                	<span class="shadow">This text has a gray shadow</span>
+                </p>
+                <h4>Rounded Corners and Shadows</h3>
+                <p class="rounded" style="width:180px; padding:4px;">This has rounded corners</p>
+                <p class="rounded_top_right box_shadow" style="width:250px; padding:4px;">This has the top right coruner rounded only!</p>
+                <h4>Rotation and Animation</h4>
+                <p class="rotate" style="width:80px; height:50px; border:1px solid #ccc; padding:5px; margin-left:15px;">Rotated Paragraph</p>				
+                <button class="gradient">Gradient Demo</button>
+                <h3>This font can be used on any page, it uses @font-face which is supported by 97% of browsers. Find more fonts like this one here: http://www.fontsquirrel.com/ http://typekit.com/ http://code.google.com/webfonts</h3>
+            </div>
+        </article>
+  </div><!-- end content -->
+  <div class="clear" style="height:10px; border-bottom:1px solid #ccc;"></div>
+</div><!-- end wrap -->
+<footer class="row">
+    <section class="col_8 col align_left">
+    All rights reserved 52framework owned by <a href="http://enavu.com">enavu network</a>
+    </section>
+    <section class="col_8 col align_right">
+    Have questions? Contact me at angel@enavu.com | Even if it's just to say thanks!
+    </section>
+</footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset=utf-8>
+    <title>52framework - The framework from the future, HTML5, CSS3, and more!</title>
+    
+    <script src="js/modernizr-1.7.min.js"></script><!-- this is the javascript allowing html5 to run in older browsers -->
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" title="html5doctor.com Reset Stylesheet" />
+    
+    <!-- in the CSS3 stylesheet you will find examples of some great new features CSS has to offer -->
+    <link rel="stylesheet" type="text/css" href="css/css3.css" media="screen" />
+    
+    <!-- general stylesheet contains some default styles, you do not need this, but it helps you keep a uniform style -->
+    <link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
+    
+    <!-- grid's will help you keep your website appealing to your users, view 52framework.com website for documentation -->
+    <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen" />
+    
+    <!-- the following style is for demonstartion purposes only and is not needed for anything but inspiration -->
+    <style>
+		header {padding-top:25px; border-bottom:1px solid #ccc; padding-bottom:20px;}
+		header .logo {font-size:3.52em;}
+		header nav ul li {float:left; margin-top:12px;}
+		header nav ul li a {display:block; padding:5px 15px; border-right:1px solid #eee; font-size:1.52em; font-family:Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+		header nav ul li a:hover {background-color:#eee; border-right:1px solid #ccc; text-shadow:-1px -1px 0px #fff;}
+		header nav ul li.last a {border-right:none;}
+		
+		#styled {margin-top:20px;}
+		
+		.group {padding:5px; background-color:#eee; border:1px dashed #ccc; list-style:none; margin:0px; margin-bottom:5px;}
+		.group a {font-size:1.2em;}
+		.group p {margin-bottom:5px;}
+		.group li {margin-bottom:5px;}
+		
+		#css3 div > div {margin:0px 0px 50px 0px; padding:6px; border:1px solid #eee;}
+		#grid div {text-align:center;  }
+		#grid div > .col {border-bottom:1px solid #ccc; padding:10px 0px; outline:1px solid #eee;}
+		
+		h2 {border-bottom:1px dashed #ccc; margin-top:15px;}
+		
+		.documentation {display:block; background-color:#eee; padding:6px 13px; font-family:Georgia, "Times New Roman", Times, serif; color:#666; text-align:right; text-shadow:-1px -1px 0px #fff;}
+		
+		footer {text-align:center; color:#666; font-size:0.9em; padding:4px 0px;}
+		
+		.report_bugs {
+			-webkit-transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+			position: absolute;
+			left:-45px;
+			top:200px;
+			background-color:#f00;
+			color:#fff;
+			z-index:99;
+			filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+			text-decoration:none;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-size:1.2em;
+			padding:2px 5px;
+		}
+	</style>
+    <!--[if IE]> <style> .report_bugs {left:0px;} </style>	<![endif]-->
+    </head>
+
+<body>
+<a href="http://code.google.com/p/52framework/issues/entry" class="report_bugs" target="_blank">REPORT BUGS</a>
+<div class="row">
+	<header>
+    	
+        <div class="logo col_7 col">52framework</div><!-- logo col_7 -->
+        
+        <nav class="col_9 col">
+        	<ul>
+            	<li><a href="http://www.52framework.com">home</a></li>
+                <li><a href="http://www.52framework.com/documentation">documentation</a></li>
+                <li><a href="http://www.52framework.com/blog">blog</a></li>
+            	<li class="last"><a href="http://www.enavu.com">enavu network</a></li>
+            </ul>
+        </nav><!-- nav col_9 -->
+        <div class="clear"></div><!-- clear -->
+    </header>
+</div><!-- row -->
+
+<!-- this section shows you most of the styled elements from the general stylesheet -->
+<section class="row" id="styled">
+    <div class="col_16 col">
+    	<h1 class="fontface">Welcome to 52Framework 2.0</h1>
+        
+        <h2>HTML5</h2>
+        <ul class="group html5">
+        	<li>
+            	<a href="demos/html5/simple.html">Simple Minimal HTML5 Page</a>
+            	<p>This page will be the easiest start you will ever have with HTML5. The page is completely cross browser with the minimal number of embeds required for the framework to work.</p>
+            </li>
+            <li>
+            	<a href="demos/html5/full.html">Feature Full HTML5 Page</a>
+            	<p>This page is filled with all the amazing HTML5 you can handle and then some. The page has been created so it uses JavaScript to support older browsers which are not quite ready for the HTML5 spotlight. Which means that about 90% of the awesome features HTML5 gives you will partially to fully work in older browsers (ues you ie6-8).</p>
+            </li>
+            <li>
+            	<a href="demos/html5/form.html">HTML5 Form Framework</a>
+            	<p>We have used the most semantic form markup on the web and then styled it with an extremely flexible CSS base that allows you to embed this into any of your projects and modify the styling fast and easy!</p>
+            </li>
+        </ul>
+        
+        <h2>CSS3</h2>
+        <ul class="group css3">
+        	<li>
+            	<a href="demos/css3/demo.html">Demo of the CSS3 properties</a>
+            	<p>This page will show you the latest and greatest CSS3 properties you can use, and give you brief browser-support outlines, and graceful degrading. Also this page demos the use of advanced CSS3 selectors and an included javascript library that gives support to older browsers!</p>
+            </li>
+        </ul>
+        
+        <h2>Framework</h2>
+        <ul class="group framework">
+        	<li>
+            	<a href="demos/framework/grid.html">Grid Framework</a>
+                <p>This grid framework has been adopted from several of the best grids on the web. It feels the most natural and easy to use.</p>
+            </li>
+            <li>
+            	<a href="demos/framework/css.html">CSS Framework</a>
+                <p>This css framework has been built by experts working on websites with millions of visitors a day and has been improved by some of the brightest minds on the web. Inspirations from Bluepring and others.</p>
+            </li>
+        </ul>
+        <h2>Blog</h2>
+        <ul class="group blog">
+        	<li>
+            	<a href="demos/blog/index.html">Simple Blog Page with Articles</a>
+            	<p>This is a simple template for creating a blog page with the 52framework.</p>
+            </li>
+            <li>
+            	<a href="demos/blog/article.html">Simple Blog Article Page</a>
+            	<p>This is the page of a blog article.</p>
+            </li>
+        </ul>
+    </div><!-- col_16 -->
+</section><!-- row -->
+
+<footer class="row">
+
+	<div class="col_16 col">all rights reserved &copy; <a href="http://www.enavu.com">enavu network</a> | 52framework the framework from the future</div>
+
+</footer>
+</body>
+</html>

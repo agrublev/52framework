@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* 52framework CSS Framework for Mobile Devices */
+
+body { font-size:12px;}
+
+.row, .col, .col_1, .width_1, .col_2, .width_2 , .col_3, .width_3, .col_4, .width_4 , .col_5, .width_5, .col_6, .width_6, .col_7, .width_7	, .col_8, .width_8, .col_9, .width_9 , .col_10, .width_10, .col_11, .width_11
+,.col_12, .width_12	, .col_13, .width_13	, .col_14, .width_14 , .col_15, .width_15	, .col_16, .width_16 {width:96%; padding:0px 2%;}
+
+/* Portrait */
+@media screen and (max-width: 320px)
+{
+	header nav ul li a {display:block; padding:3px 6px; border-right:1px solid #eee; font-size:12px; font-family:Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+}
+ 
+/* Landscape */
+@media screen and (min-width: 321px)
+{
+	
+}

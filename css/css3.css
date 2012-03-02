@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS3 52framework */
+@font-face {
+	font-family: 'PTSansRegular';
+	src: url('PT_Sans-webfont.eot');
+	src: local('☺'), url('PT_Sans-webfont.woff') format('woff'), url('PT_Sans-webfont.ttf') format('truetype'), url('PT_Sans-webfont.svg#webfont6MwxiJev') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fontface { font-family:'PTSansRegular', Arial, sans-serif; }
+
+
+/* 
+	The CSS3 Text-Shadow property contains the following values
+	horizontal-offset (length, required) | vertical-offset (length, required) | blur-radius (length, optional) | shadow-color (color, optional) 
+*/
+
+.shadow {	text-shadow:1px 1px 1px #666; 
+	 	}/*<-- edit the color you wish to use in your shadows */
+	
+.shadow_multiple {text-shadow: -2px -2px 0px #1fd31f,
+             2px 2px 0px #1f9ad3;
+}
+
+.rounded {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	
+}
+
+.rounded_top_right {
+	border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	-webkit-border-top-right-radius:5px;
+	border:1px solid #ccc;
+	
+}
+
+.box_shadow {
+	-webkit-box-shadow: 1px 1px 3px #ccc;
+	-moz-box-shadow: 1px 1px 3px #ccc;
+	box-shadow: 1px 1px 3px #ccc;
+	
+}
+.box_shadow_multiple {
+	-webkit-box-shadow: 0 0 20px #ccc inset,
+						10px 7px 15px #f0f961,
+						-10px 7px 15px #55fc6d,
+						-10px -7px 15px #55d7fc,
+						10px -7px 15px #fc9c9c;
+	
+	-moz-box-shadow: 0 0 20px #ccc inset,
+						10px 7px 15px #f0f961,
+						-10px 7px 15px #55fc6d,
+						-10px -7px 15px #55d7fc,
+						10px -7px 15px #fc9c9c;
+	
+	box-shadow:		0 0 20px #ccc inset,
+						10px 7px 15px #f0f961,
+						-10px 7px 15px #55fc6d,
+						-10px -7px 15px #55d7fc,
+						10px -7px 15px #fc9c9c;
+}
+
+.rotate {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(-180deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	/* possible properties for the Internet Explorer filter rotation are: 1. Content is rotated 90 degrees.  
+		`														 		  2. Content is rotated 180 degrees.
+																 		  3. Content is rotated 270 degrees.
+	*/
+}
+
+.gradient {
+		background: #f3c5bd; /* old browsers */
+
+		background: -moz-linear-gradient(top, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* firefox */
+		
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3c5bd), color-stop(50%,#e86c57), color-stop(51%,#ea2803), color-stop(75%,#ff6600), color-stop(100%,#c72200)); /* webkit */
+		
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* ie */
+		
+		/* generated with http://www.colorzilla.com/gradient-editor/ */
+	 }
+.gradient_radial {
+	 background:-webkit-gradient(radial, center center, 0, center center, 50, from(#eee), to(#ccc));
+	 background: -moz-radial-gradient(#eee, #ccc); 
+}

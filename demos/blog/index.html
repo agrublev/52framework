@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset=utf-8>
+    <title>52framework - The framework from the future, HTML5, CSS3, and more!</title>
+    <script src="http://c.fzilla.com/1286136086-jquery.js"></script>
+    <script src="../../js/modernizr-1.7.min.js"></script><!-- this is the javascript allowing html5 to run in older browsers -->
+    
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css" media="screen" title="html5doctor.com Reset Stylesheet" />
+    
+    <!-- in the CSS3 stylesheet you will find examples of some great new features CSS has to offer -->
+    <link rel="stylesheet" type="text/css" href="../../css/css3.css" media="screen" />
+    
+    <!-- general stylesheet contains some default styles, you do not need this, but it helps you keep a uniform style -->
+    <link rel="stylesheet" type="text/css" href="../../css/general.css" media="screen" />
+    
+    <!-- grid's will help you keep your website appealing to your users, view 52framework.com website for documentation -->
+    <link rel="stylesheet" type="text/css" href="../../css/grid.css" media="screen" />
+    
+    <!-- this script is needed for using advanced css selectors in your css -->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    	<script src="js/selectivizr.js"></script>
+    <![endif]-->  
+    
+    
+    <!-- the following style is for demonstartion purposes only and is not needed for anything but inspiration -->
+    <style>
+		header {padding-top:10px; border-bottom:2px solid #525252; margin-bottom:10px;}
+		header .logo {font-size:2.52em;}
+		header nav ul {float:right;}
+		header nav ul li {float:left;}
+		header nav ul li a {display:block; padding:5px 15px; border-right:1px solid #eee; font-size:1.052em; font-family:Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+		header nav ul li a:hover {background-color:#eee; border-right:1px solid #ccc; text-shadow:-1px -1px 0px #fff;}
+		header nav ul li:last-child a {border-right:none;}
+		
+		article {border-bottom:5px double #ccc; margin-bottom:10px; padding-bottom:10px;}
+		article a h3 {border-bottom:2px solid #eee;}
+		article a {text-decoration:none;}
+		
+		article .date {display:block; float:left; border:1px dashed #ccc; margin-right:15px; margin-bottom:10px; background-color:#fff;}
+		article .date .day {font-family:Georgia, "Times New Roman", Times, serif; font-size:2.5em; text-align:center; display:block; padding:1px 10px;}
+		article .date .month {font-family:Arial, Helvetica, sans-serif; background-color:#eee; border-top:1px dashed #ccc; border-bottom:1px dashed #ccc; font-weight:600; color:#525252;  display:block; text-align:center; padding:3px;}
+		article .date .year {font-family:Verdana, Geneva, sans-serif; font-size:10px; text-align:center; color:#ccc; display:block;}
+		
+		article .more {display:block; float:right; background-color:#eee; text-decoration:none; padding:3px;}
+		
+		ul.recent {list-style:none; margin:0px; padding:0px;}
+		ul.recent li {margin-bottom:5px; font-size:1.052em; border-bottom:1px solid #eee; padding-bottom:5px;}
+		
+		.side_element {margin-bottom:5px; padding-bottom:5px; border-bottom:1px dashed #ccc;}
+		
+		h2 {border-bottom:1px dashed #ccc;}
+		
+		footer {text-align:center; color:#666; font-size:0.9em; padding:4px 0px; border-top:1px solid #525252;}
+	</style>
+    </head>
+
+<body>
+<div class="row">
+	<header>
+    	
+      <div class="logo col_7 col">52framework/Blog</div><!-- logo col_7 -->
+        
+      <nav class="col_9 col">
+        	<ul>
+            	<li><a href="#navigation">navigation 1</a></li>
+                <li><a href="#navigation">navigation 2</a></li>
+            	<li><a href="http://www.enavu.com">enavu network</a></li>
+            </ul>
+        </nav><!-- nav col_9 -->
+      <div class="clear"></div><!-- clear -->
+    </header>
+</div><!-- row -->
+
+<!-- this section shows you most of the styled elements from the general stylesheet -->
+<section class="row" id="styled">
+    <div class="col col_11">
+        <article>    
+        	<div class="date">
+                <span class="day">16</span>
+                <span class="month">Mar</span>
+                <span class="year">2010</span>
+            </div>
+            <a href="article.html"><h3>Making an infinite JQuery carousel</h3></a>
+            <p>Duis ac arcu ante, at lacinia dui. Ut eget justo in nulla rutrum mollis. Mauris euismod justo et smod justo  smod justo  quam bibendum laoreet volutpat lorem mollis. In hac habitasse platea dictumst.
+             Mauris ut eleifend neque. Duis nulla metus, tempus nec varius quis, tincidunt consectetur nisi. Donec rhoncus quam vel quam bibendum rutrum. Mauris et commodo felis. Nam varius eleifend nulla quis sagittis. Quisque id tortor at dolor dictum interdum.</p>
+             <a href="article.html" class="more">read more &rarr;</a>
+             <div class="clear"></div>
+        </article>
+        <!-- -->
+        <article>  
+        	<div class="date">
+                <span class="day">23</span>
+                <span class="month">Jan</span>
+                <span class="year">2011</span>
+            </div>  
+            <a href="article.html"><h3>jQuery and Ajax :) the simple designer way</h3></a>
+            <p>This is really short text.</p>
+             <a href="article.html" class="more">read more &rarr;</a>
+             <div class="clear"></div>
+        </article>
+        <!-- -->
+        <article>    
+        	<div class="date">
+                <span class="day">09</span>
+                <span class="month">Sep</span>
+                <span class="year">2010</span>
+            </div>
+            <a href="article.html"><h3>Create an AMAZING contact form with no ready made plugins</h3></a>
+            <p>Duis ac arcu ante, at lacinia dui. Ut eget justo in nulla rutrum mollis. Mauris euismod justo et smod justo  smod justo  quam bibendum laoreet volutpat lorem mollis. In hac habitasse platea dictumst.
+             Mauris ut eleifend neque. Duis nulla metus, tempus nec varius quis, tincidunt consectetur nisi. Donec rhoncus quam vel quam bibendum rutrum. Mauris et commodo felis. Nam varius eleifend nulla quis sagittis. Quisque id tortor at dolor dictum interdum.</p>
+             <a href="article.html" class="more">read more &rarr;</a>
+             <div class="clear"></div>
+        </article>
+        <!-- -->
+    </div><!-- col_11 -->
+  <div class="col col_5">
+  			<div class="side_element">
+                <h2>Recent Articles</h2>
+                <ul class="recent">
+                    <li><a href="article.html" title="Making a jQuery infinite carousel with nice features">Making a jQuery infinite carousel with nice features</a></li>
+                    <li><a href="article.html" title="Making a jQuery pagination system">Making a jQuery pagination system</a></li>
+                    <li><a href="article.html" title="Create an AMAZING contact form with no ready made plugins.">Create an AMAZING contact form with no ready made plugins.</a></li>
+                    <li><a href="article.html" title="Making an infinite JQuery carousel">Making an infinite JQuery carousel</a></li>
+                    <li><a href="article.html" title="Top 6 Ugliest Web Design Company Websites">Top 6 Ugliest Web Design Company Websites</a></li>
+                    <li><a href="article.html" title="How to make a completely reusable jquery modal window">How to make a completely reusable jquery modal window</a></li>
+                    <li><a href="article.html" title="Checking username availability with ajax using jQuery">Checking username availability with ajax using jQuery</a></li>
+                </ul>	
+            </div><!-- side_element -->
+            <div class="side_element">
+            	<h2>Side Element Title</h2>
+                <p>Duis ac arcu ante, at lacinia dui. Ut eget justo in nulla rutrum mollis. Mauris euismod justo et smod justo smod justo quam bibendum laoreet volutpat lorem mollis. In hac habitasse platea dictumst. Mauris ut eleifend neque. Duis nulla metus, tempus nec varius quis, tincidunt consectetur nisi. Donec rhoncus quam vel quam bibendum rutrum. Mauris et commodo felis. Nam varius eleifend nulla quis sagittis. Quisque id tortor at dolor dictum interdum.</p>
+            </div><!-- side_element -->
+    </div><!-- col_5 -->
+</section><!-- row -->
+
+<footer class="row">
+
+	<div class="col_16 col">all rights reserved &copy; <a href="http://www.enavu.com">enavu network</a> | 52framework the framework from the future</div>
+
+</footer>
+</body>
+</html>

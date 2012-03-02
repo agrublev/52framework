@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset=utf-8>
+    <title>52framework - The framework from the future, HTML5, CSS3, and more!</title>
+    
+    <script src="../../js/modernizr-1.7.min.js"></script><!-- this is the javascript allowing html5 to run in older browsers -->
+    
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css" media="screen" title="html5doctor.com Reset Stylesheet" />
+    
+    <!-- in the CSS3 stylesheet you will find examples of some great new features CSS has to offer -->
+    <link rel="stylesheet" type="text/css" href="../../css/css3.css" media="screen" />
+    
+    <!-- general stylesheet contains some default styles, you do not need this, but it helps you keep a uniform style -->
+    <link rel="stylesheet" type="text/css" href="../../css/general.css" media="screen" />
+    
+    <!-- grid's will help you keep your website appealing to your users, view 52framework.com website for documentation -->
+    <link rel="stylesheet" type="text/css" href="../../css/grid.css" media="screen" />
+    
+    <!-- special styling for forms, this can be used as a form framework on its own -->
+    <link rel="stylesheet" type="text/css" href="../../css/forms.css" media="screen" />
+    
+    <!-- the following style is for demonstartion purposes only and is not needed for anything but inspiration -->
+    <style>
+		header {padding-top:25px; border-bottom:1px solid #ccc; padding-bottom:20px;}
+		header .logo {font-size:3.52em;}
+		header nav ul li {float:left; margin-top:12px;}
+		header nav ul li a {display:block; padding:5px 15px; border-right:1px solid #eee; font-size:1.52em; font-family:Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+		header nav ul li a:hover {background-color:#eee; border-right:1px solid #ccc; text-shadow:-1px -1px 0px #fff;}
+		header nav ul li.last a {border-right:none;}
+		
+		blockquote {font-size:14px;}
+		
+		h2 {border-bottom:1px dashed #ccc; margin-top:15px;}
+		
+		footer {text-align:center; color:#666; font-size:0.9em; padding:4px 0px;}
+	</style>
+    </head>
+
+<body>
+<div class="row">
+	<header>
+    	
+        <div class="logo col_7 col">52framework</div><!-- logo col_7 -->
+        
+      <nav class="col_9 col">
+        	<ul>
+            	<li><a href="#navigation">navigation 1</a></li>
+                <li><a href="#navigation">navigation 2</a></li>
+            	<li class="last"><a href="http://www.enavu.com">enavu network</a></li>
+            </ul>
+        </nav><!-- nav col_9 -->
+      <div class="clear"></div><!-- clear -->
+    </header>
+</div><!-- row -->
+
+<section class="row" id="forms">
+	<h2 class="fontface">Forms Demo</h2>
+	<form class="col col_6">
+    	<fieldset>	
+        	<legend>Dual Column example</legend>
+            <div>
+            	<label for="email">email</label>
+                <input type="email" id="email" required="required" class="box_shadow"  />
+            </div>
+            <div>
+            	<label for="phone">phone</label>
+                <input type="number" id="phone" required="required" class="box_shadow" min="10" />
+            </div>
+            <div>
+            	<label for="name">name</label>
+                <input type="text" id="name" class="box_shadow" />
+            </div>
+            <div>
+            	<label for="url">url</label>
+                <input type="url" id="url" class="box_shadow" />
+            </div>
+            <input type="submit" value="submit form &rarr;" />
+        </fieldset>
+    </form>
+    <form class="col col_5">
+    	<fieldset class="s_column">	
+        	<legend>Single Column example</legend>
+            <div>
+            	<label for="email">email</label>
+                <input type="email" id="email" required="required" class="box_shadow"  />
+            </div>
+            <div>
+            	<label for="phone">phone</label>
+                <input type="number" id="phone" required="required" class="box_shadow" min="10" />
+            </div>
+            <div>
+            	<label for="name">name</label>
+                <input type="text" id="name" class="box_shadow" />
+            </div>
+            <div>
+            	<label for="url">url</label>
+                <input type="url" id="url" class="box_shadow" />
+            </div>
+            <input type="submit" value="submit form &rarr;" />
+        </fieldset>
+    </form>
+    <blockquote class="right" style="width:250px;">
+        	Notice in the forms to the left we showcase the two different styles of forms you will commonly find on the internet. If you look in the markup the code is the exact same semantic markup, the only difference is we add a class s_column to the fieldset which then our CSS Form framework handles and creates the completely different style for the single column form.
+     </blockquote>
+     <div class="clear"></div>
+     <blockquote>
+     	The form framework was built based on a percentage system that will allow you to embed this code into almost all dimensions without having to modify a bit of code. Try it out by using different col_ class in the form classes.
+     </blockquote>
+  <div class="clear" style="height:15px;"></div><!-- clear -->
+	<div class="col_16 col">
+    	
+    </div><!-- col -->
+</section><!-- row -->
+
+<footer class="row">
+
+	<div class="col_16 col">all rights reserved &copy; <a href="http://www.enavu.com">enavu network</a> | 52framework the framework from the future</div>
+
+</footer>
+</body>
+</html>

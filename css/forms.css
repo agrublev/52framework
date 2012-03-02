@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* ** ** forms ** ** */
+form fieldset {-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius:3px; padding:10px; border:1px solid #eee; }
+form fieldset legend {font-size:1.4em; padding:0 5px;}
+form input[type=text], form input[type=email], form input[type=url], form input[type=password], form input[type=number], textarea {
+		-moz-border-radius: 3px; 
+		-webkit-border-radius: 3px; 
+		border-radius:3px; 
+		height:20px; 
+		margin-bottom:5px; 
+		border:1px solid #ccc; 
+		padding:4px 0 1px 5px;
+		}
+form .textarea textarea {-moz-border-radius: 3px; 
+		-webkit-border-radius: 3px; 
+		border-radius:3px; 
+		margin-bottom:5px; 
+		min-height:50px;
+		border:1px solid #ccc; 
+		padding:4px 0 1px 5px; width:100%;}
+form .textarea {height:auto;}
+form label {display:block; height:20px; font-size:1.2em;}
+
+/* special form styling */
+form div {height:24px; clear:both; margin-bottom:6px; padding:5px 0px;}
+form div label {float:left; width:auto;}
+form div input {width:52%; float:right;}
+form div input.invalid {border-bottom:1px solid #f00;}
+form fieldset input[type=submit], form fieldset button { display: inline-block;
+
+    padding: 4px 8px;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-size: 13px;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    border: 1px solid rgba(0, 0, 0, 0.6);
+
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbfcfb), to(#9d9e9d));
+    background: -moz-linear-gradient(#fbfcfb, #9d9e9d);
+    background-color: #eee;
+
+    text-shadow: rgba(255, 255, 255, 0.4) 0px 1px;
+
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+	cursor:pointer;
+}
+form fieldset input:hover[type=submit], form fieldset button:hover {
+	background: #B5B5B5;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px,
+                        black 0px 1px 3px inset,
+                        rgba(0, 0, 0, 0.4) 0px -5px 12px inset;
+
+    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px,
+                     black 0px 1px 3px inset,
+                     rgba(0, 0, 0, 0.4) 0px -5px 12px inset;
+
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px,
+                black 0px 1px 3px inset,
+                rgba(0, 0, 0, 0.4) 0px -5px 12px inset;
+
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 1px;
+	cursor:pointer;
+}
+
+/* single column form styling */
+
+form .s_column div {height:auto; margin-bottom:3px; padding:0px;}
+form .s_column div label {float:none; width:100%;}
+form .s_column div input {width:98%; float:none;}
+
