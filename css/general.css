@@ -14,6 +14,11 @@ body {
 .right, .float_right { float:right	}
 .clear { clear:both; display:block; overflow:hidden; visibility:hidden; height:0px;}
 .clear-left, .clear_left { clear:left; } .clear-right, .clear_right { clear:right; }
+.clearfix:after { content: ".";	display: block;	clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix {	display: block; }
+* html .clearfix { height: 1%; }
+
 .hide  { display:none	} .block {display:block !important;} .inline {display:inline !important;}
 
 .align_right    { text-align:right;	  }
