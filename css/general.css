@@ -79,7 +79,7 @@ li ul,li ol{
 	color:#fff;
 }
 /* ** ** paragraph styling ** ** */
-p {margin:0 0 1.52em;}
+p {margin:0 0 1.52em; line-height:1.652em;}
 	p img.left {float:left;margin:1.52em 1.52em 1.52em 0;padding:0;}
 	p img.right {float:right;margin:1.52em 0 1.52em 1.52em;}
 
@@ -87,6 +87,8 @@ strong   		{	font-weight:600;}
 em, dfn  		{	font-style:italic;}
 dfn 	 		{   font-weight:600;}
 sup, sub 		{   line-height:0;}
+sup 			{	vertical-align: super; font-size: smaller;}
+sub				{	vertical-align: sub; font-size: smaller;}
 abbr, acronym   {	border-bottom:1px dashed #ccc;}
 address 		{	margin:0 0 1.5em;font-style:italic;}
 del 			{	color:#666;}
